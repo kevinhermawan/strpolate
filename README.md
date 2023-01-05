@@ -1,10 +1,10 @@
 # Strpolate ![License](https://img.shields.io/npm/l/strpolate) ![Test coverage](https://img.shields.io/codecov/c/github/kevinhermawan/strpolate)
 
-Strpolate is a JavaScript library that offers fast and efficient string interpolation by replacing placeholders in the string with corresponding values from an object. It also includes type validation to ensure that the values being inserted match the expected data type of the placeholder.
+Strpolate is a JavaScript library that offers fast string interpolation by replacing placeholders in the string with corresponding values from an object. It also includes type validation to ensure that the values being inserted match the expected data type of the placeholder.
 
 ## Features
 
-- Fast and efficient string interpolation
+- Fast string interpolation
 - Built-in type validation
 - Zero dependencies
 
