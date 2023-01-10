@@ -1,4 +1,6 @@
-# Strpolate ![License](https://img.shields.io/npm/l/strpolate) ![Test coverage](https://img.shields.io/codecov/c/github/kevinhermawan/strpolate)
+# Strpolate
+
+![Minified size](https://img.shields.io/bundlephobia/min/strpolate) ![Test coverage](https://img.shields.io/codecov/c/github/kevinhermawan/strpolate) ![Monthly download](https://img.shields.io/npm/dm/strpolate)
 
 Strpolate is a JavaScript library that offers fast string interpolation by replacing placeholders in the string with corresponding values from an object. It also includes type validation to ensure that the values being inserted match the expected data type of the placeholder.
 
@@ -54,3 +56,7 @@ strpolate(
 ```ts
 strpolate(string: string, values: Record<string, string | number | boolean | undefined>): string
 ```
+
+## License
+
+[MIT License](/LICENSE)
