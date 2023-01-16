@@ -1,4 +1,4 @@
-import type { TypeErrorArgs, Values } from './types';
+import type { TypeErrorArgs, Values } from "./types";
 
 export default function strpolate(s: string, values: Values): string {
   return s.replace(/%(\w*)\{(\w+)\}/g, (_, type, key) => {
@@ -11,10 +11,10 @@ export default function strpolate(s: string, values: Values): string {
     }
 
     if (
-      type === '' ||
-      ((type === 's' || type === 'string') && isString(value)) ||
-      ((type === 'n' || type === 'number') && isNumber(value)) ||
-      ((type === 'b' || type === 'boolean') && isBoolean(value))
+      type === "" ||
+      ((type === "s" || type === "string") && isString(value)) ||
+      ((type === "n" || type === "number") && isNumber(value)) ||
+      ((type === "b" || type === "boolean") && isBoolean(value))
     ) {
       return String(value);
     }
@@ -24,30 +24,30 @@ export default function strpolate(s: string, values: Values): string {
 }
 
 function isString(x: unknown): x is string {
-  return typeof x === 'string';
+  return typeof x === "string";
 }
 
 function isNumber(x: unknown): x is number {
-  return typeof x === 'number';
+  return typeof x === "number";
 }
 
 function isBoolean(x: unknown): x is boolean {
-  return typeof x === 'boolean';
+  return typeof x === "boolean";
 }
 
 function typeToString(type: string): string {
   switch (type) {
-    case 's':
-    case 'string':
-      return 'string';
-    case 'n':
-    case 'number':
-      return 'number';
-    case 'b':
-    case 'boolean':
-      return 'boolean';
+    case "s":
+    case "string":
+      return "string";
+    case "n":
+    case "number":
+      return "number";
+    case "b":
+    case "boolean":
+      return "boolean";
     default:
-      return 'unknown';
+      return "unknown";
   }
 }
 
