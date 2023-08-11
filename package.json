@@ -2,7 +2,7 @@
   "type": "module",
   "name": "strpolate",
   "description": "Fast string interpolation with built-in type validation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
